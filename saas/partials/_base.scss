@@ -1,0 +1,24 @@
+body, html {
+    margin:0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: $p_font;
+}
+
+h1 {
+    font-family: $h1_font;
+}
+
+h2, h3, h4 {
+    font-family: $h2_font;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: $p_font;
+}
+
+.container {
+    margin-left: 2.5em;
+}

@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald|Roboto|Roboto+Slab");
+body, html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif; }
+
+h1 {
+  font-family: "Oswald", sans-serif; }
+
+h2, h3, h4 {
+  font-family: "Roboto Slab", serif;
+  margin: 0;
+  padding: 0; }
+
+p {
+  font-family: "Roboto", sans-serif; }
+
+.container {
+  margin-left: 2.5em; }
+
+header nav {
+  background-color: rgba(152, 38, 73, 0.9);
+  width: 6em;
+  height: 100vh;
+  position: fixed;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column-align: start;
+  justify-self: start;
+  -webkit-box-shadow: 0 0 20px 2px #444;
+  box-shadow: 0 0 20px 2px #444;
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-transition: -webkit-transform .5s ease-in-out .1s;
+  transition: -webkit-transform .5s ease-in-out .1s;
+  -o-transition: transform .5s ease-in-out .1s;
+  transition: transform .5s ease-in-out .1s;
+  transition: transform .5s ease-in-out .1s, -webkit-transform .5s ease-in-out .1s; }
+  header nav h2 {
+    color: #fff;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-transform-origin: top;
+    -ms-transform-origin: top;
+    transform-origin: top;
+    position: absolute;
+    top: 3em;
+    left: .5em; }
+  header nav ul {
+    display: -ms-grid;
+    display: grid;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    height: 50%;
+    top: 50%;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+    header nav ul li {
+      list-style-type: none; }
+      header nav ul li a {
+        text-decoration: none;
+        color: white;
+        -webkit-transition: all 250ms ease-in-out;
+        -o-transition: all 250ms ease-in-out;
+        transition: all 250ms ease-in-out; }
+        header nav ul li a:hover {
+          opacity: .2; }
+
+.nav-button {
+  display: block;
+  background-color: #982649;
+  width: 2.2em;
+  height: 100vh;
+  position: fixed;
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  transition: -webkit-transform .5s ease-in-out;
+  -o-transition: transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+  transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
+  color: white;
+  -webkit-box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.7); }
+  .nav-button p {
+    position: relative;
+    top: 50%;
+    left: 25%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    -webkit-transform-origin: center left;
+    -ms-transform-origin: center left;
+    transform-origin: center left;
+    -webkit-transition: .5s ease-in-out .2s;
+    -o-transition: .5s ease-in-out .2s;
+    transition: .5s ease-in-out .2s; }
+
+/*
+.nav-button {
+    pointer-events: none;
+}
+
+.nav-icon {
+    pointer-events: auto;
+
+    &:hover {
+        transform:rotate(90deg);
+        left: 50%;
+    }
+}
+
+.nav-button:hover {
+    transform: translateX(90px);
+}*/
+.nav_is_open nav {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  transition: -webkit-transform .5s ease-in-out;
+  -o-transition: transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+  transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out; }
+
+.nav_is_open .nav-button {
+  -webkit-transform: translateX(90px);
+  -ms-transform: translateX(90px);
+  transform: translateX(90px); }
+
+.nav_is_open .nav-icon {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  left: 50%; }
