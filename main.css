@@ -134,3 +134,85 @@ header nav {
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
   left: 50%; }
+
+.hero-header {
+  background-image: url(/img/hero-dark.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  color: white;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: .5fr 2fr 2fr 1fr;
+  grid-template-columns: .5fr 2fr 2fr 1fr;
+  -ms-grid-rows: (1fr)[5];
+  grid-template-rows: repeat(5, 1fr);
+  line-height: 1.3rem; }
+  .hero-header h3 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 3;
+    grid-column: 2/5;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    -ms-grid-row-align: center;
+    align-self: center;
+    font-size: 1.5rem;
+    padding-bottom: .5em;
+    margin-left: .7em; }
+  .hero-header h1 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 3;
+    grid-column: 2/5;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    align-self: flex-end;
+    font-size: 2rem;
+    margin: 0;
+    padding-bottom: .5em;
+    margin-left: .5em; }
+  .hero-header p {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2/4;
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4/5;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-left: 1em; }
+  .hero-header button {
+    all: unset;
+    text-align: center;
+    -ms-grid-column: 3;
+    grid-column: 3;
+    -ms-grid-row: 5;
+    grid-row: 5;
+    -ms-grid-column-align: end;
+    justify-self: end;
+    width: 8em;
+    height: 3em;
+    border-radius: 7px;
+    background-color: #982649;
+    border: solid thin #982649;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    z-index: 2;
+    cursor: pointer;
+    -webkit-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out; }
+    .hero-header button:active {
+      -webkit-filter: saturate(150%);
+      filter: saturate(150%); }
+    .hero-header button:hover {
+      -webkit-box-shadow: 0 0 15px 0.3px rgba(255, 255, 255, 0.4);
+      box-shadow: 0 0 15px 0.3px rgba(255, 255, 255, 0.4);
+      border-radius: 20px;
+      -webkit-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+      transform: translateY(-5px); }
+    .hero-header button:focus {
+      border: solid thin rgba(255, 255, 255, 0.3); }
