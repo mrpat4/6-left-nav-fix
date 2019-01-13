@@ -1,0 +1,72 @@
+.services {
+
+    display: grid;
+    grid-template-columns: .5fr auto auto auto .5fr;
+    grid-template-rows: .5fr auto auto; 
+    grid-gap: 1em;
+   h1 {
+       grid-column: 3/4;
+       font-size: 3rem;
+       text-align: center;
+       color: $my_red;
+       font-style: italic;
+   }
+
+   figure {
+       max-width:300px;
+       width: 80%;
+       background-color: rgba($my_green, 0.2);
+       color: rgb(75, 75, 75);
+       padding: 1em;
+       margin: 0;
+       margin-left: 3em;
+       margin-bottom: 3em;
+       transition: .3s ease-in-out;
+       
+       &:hover{
+        box-shadow: 0 0 15px .3px rgba(195,195,195,.8);
+       } 
+       .fab, .fas , .far {
+           font-size: 2rem;
+           padding-bottom: .2em;
+           transition: .3s ease-in-out;
+       }
+
+       h3 {
+           transition: .3s ease-in-out;
+       }
+
+       &:hover h3{
+           letter-spacing: .2rem;
+       }
+       &:hover i{
+           transform:translateX(5px);
+       }
+   }
+
+   .service1 {
+       grid-column: 2/3;
+       grid-row: 2/3;
+   }
+   .service2 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+   }
+   .service3 {
+    grid-column: 4/5;
+    grid-row: 2/3;
+   }
+
+   .service4 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+.service5 {
+ grid-column: 3/4;
+ grid-row: 3/4;
+}
+.service6 {
+ grid-column: 4/5;
+ grid-row: 3/4;
+}
+}
