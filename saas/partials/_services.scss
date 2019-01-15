@@ -1,20 +1,20 @@
-.services {
-
+/*.services {
+    width: 100%;
     display: grid;
     grid-template-columns: .5fr auto auto auto .5fr;
     grid-template-rows: .5fr auto auto; 
     grid-gap: 1em;
    h1 {
-       grid-column: 3/4;
+       grid-column: 3/6;
        font-size: 3rem;
-       text-align: center;
+       //text-align: center;
        color: $my_red;
        font-style: italic;
    }
 
    figure {
-       max-width:300px;
-       width: 80%;
+       //max-width:300px;
+       max-width: 80%;
        background-color: rgba($my_green, 0.2);
        color: rgb(75, 75, 75);
        padding: 1em;
@@ -69,4 +69,4 @@
  grid-column: 4/5;
  grid-row: 3/4;
 }
-}
+}*/

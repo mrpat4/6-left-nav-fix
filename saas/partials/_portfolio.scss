@@ -1,0 +1,118 @@
+.portfolio {
+    width: 100%;
+    background-color: $my_green;
+    box-shadow: 0 0 20px 1px rgba(75,75,75,.5);
+    padding-top: 1em;
+    padding-bottom: 3em;
+    
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+
+    h1 {
+        color: $my_red;
+        font-size: 3rem;
+        font-style: italic;
+        text-align: center;
+    }
+    figure {
+        max-width: 22%;
+        height: auto;
+        background-color: rgba($my_green , 1);
+        display: inline-block;
+        text-align: center;
+        margin: 0 ;
+        padding: 0;
+        position: relative;
+
+        img {
+            width: 100%;
+            opacity: 1;
+            transition: opacity .35s;
+        }
+
+        .portfolio-overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            margin: auto;
+            opacity: 1;
+            transition: .35s ease-in-out;
+
+            &::before {
+                content: "";
+                position: absolute;
+                box-sizing: border-box;
+                top: 10px;
+                bottom: 10px;
+                left: 10px;
+                right: 10px;
+                border-left: solid 1px black;
+                border-right: solid 1px black;
+                transform: scale(1,0);
+                transition: .4s ease-in-out;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                box-sizing: border-box;
+                top: 10px;
+                bottom: 10px;
+                left: 10px;
+                right: 10px;
+                border-top: solid 1px black;
+                border-bottom: solid 1px black;
+                transform: scale(0,1);
+                transition: .4s ease-in-out;
+            }
+        
+
+            .overlay-text {
+                width: 100%;
+                position: absolute;
+                top: 1.2em;
+                left: 50%;
+                text-align: center;
+                transform: translate(-50%,-50%);
+                font-size: 1.2rem;
+                transition: .5s ease-in-out;
+                
+            }
+            .overlay-paragraph {
+                width: 85%;
+                position: absolute;
+                top: 20%;
+                left: 50%;
+                text-align: center;
+                transform: translate(-50%,-50%);
+                font-weight: bold;
+                transition: .4s ease-in-out;
+                opacity: 0;
+                
+            }
+        }
+    }
+}
+figure:hover .portfolio-overlay::after, figure:hover .portfolio-overlay::before  {
+    transform: scale(1);
+}
+
+ figure:hover img {
+     opacity: .2;
+ }
+
+ figure:hover .portfolio-overlay .overlay-text{
+    transform: translate(-50%,50%);
+    opacity: 0;
+ }
+
+ figure:hover .portfolio-overlay .overlay-paragraph{
+    transform: translate(-50%,50%);
+    opacity: 1;
+ }
