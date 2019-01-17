@@ -8,6 +8,7 @@
     .container {
         display: flex;
         justify-content: center;
+        margin-left: 2.5em;
     }
 
     h1 {
@@ -74,7 +75,7 @@
         
 
             .overlay-text {
-                width: 100%;
+                width: 85%;
                 position: absolute;
                 top: 1.2em;
                 left: 50%;
@@ -115,4 +116,59 @@ figure:hover .portfolio-overlay::after, figure:hover .portfolio-overlay::before 
  figure:hover .portfolio-overlay .overlay-paragraph{
     transform: translate(-50%,50%);
     opacity: 1;
+ }
+
+
+ @media only screen and (max-width: 40em){
+    .portfolio {
+
+        .container {
+            display: block;
+        }
+
+        figure {
+            display: block;
+            max-width: 80% !important;
+            margin: 0 auto !important;
+
+            img {
+                margin: 0 auto !important;
+            }
+        }
+
+        h1 {
+            margin-left: 1.3em;
+        }
+    }
+ }
+
+ @media only screen and (min-width: 41em) and (max-width: 50em) { //for ipad
+    .portfolio {
+
+        .container {
+            display: flex;
+            flex-wrap: wrap
+        }
+
+        figure {
+            display: block;
+            max-width: 80% !important;
+            margin: 0 auto !important;
+
+            img {
+                margin: 0 auto !important;
+            }
+        }
+
+        h1 {
+            margin-left: 1.3em;
+        }
+
+        h3 {
+            font-size: 2rem !important;
+        }
+        p {
+            font-size: 1.3rem !important;
+        }
+    }
  }

@@ -12,12 +12,12 @@
    <header>
        <!-- navbar -->
        <nav>
-           <h2>Portfolio</h2>
+           <h2><a href="#top">Portfolio</a></h2>
            <ul>
-               <li><a href="#">About</a></li>
-               <li><a href="#">Services</a></li>
-               <li><a href="#">Portfolio</a></li>
-               <li><a href="#">Contact</a></li>
+               <li><a href="#about">About</a></li>
+               <li><a href="#services">Services</a></li>
+               <li><a href="#portfolio">Portfolio</a></li>
+               <li><a href="#contact">Contact</a></li>
            </ul>
        </nav>
        <div class="nav-button">
@@ -26,9 +26,9 @@
        <!-- /navbar-->
 <!-- ---------------------------------------------------------------------------------------------- -->
        <!-- hero-header section -->
-       <section class="hero-header">
+       <section class="hero-header" id="top">
             <h3 class="hero-hi">Hello Im Parham</h3>
-            <h1 class="hero-title">Im a Front-End Web developer</h1>
+            <h2 class="hero-title">Im a Front-End Web developer</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque soluta animi quia quam ipsa eum deserunt aliquam eveniet inventore totam sed cum qui incidunt dolores atque autem, doloremque voluptatem possimus?</p>
             <button role="button">Contact Me</button>
        </section>
@@ -38,7 +38,7 @@
 <!-- ------------------------------------------------------------------------------------------------ -->
  
 <!-- about section -->
-   <section class="about">
+   <section class="about" id="about">
        <h1 class="about-title">< !-- About Me -- ></h1>
        <img class="about-img" src="img/Me.jpg" alt="Picture of me">
        <p class="about-desc">
@@ -58,7 +58,7 @@
 <!-- ------------------------------------------------------------------------------------------------- -->
 
 <!-- services section -->
-   <section class="services">
+   <section class="services" id="services">
        <h1 class="services-title">< !-- Services -- ></h1>
         <!-- figure 1 -->
        <figure class="service1">
@@ -136,8 +136,8 @@
 <!-- ------------------------------------------------------------------------------------------------------- -->
 
 <!-- portfolio section -->
-   <section class="portfolio">
-       <h1 class="portfolio-title">Portfolio</h1>
+   <section class="portfolio" id="portfolio">
+       <h1 class="portfolio-title">< !-- Portfolio -- ></h1>
        <div class="container"> <!-- its contain all the stuff-->   
        <!-- portfolio-items-no1 -->
        <figure class="portfolio-items">
@@ -183,13 +183,12 @@
 <!-- ----------------------------------------------------------------------------------------------------- -->
 
 <!-- contact section -->
-    <section class="contact">
-        <h2 class="contact-title">Contact Me</h2>
+    <section class="contact" id="contact">
+        <h1 class="contact-title">< !-- Contact Me -- ></h1>
         <form>
             <input type="text" placeholder="Name">
             <input type="email" placeholder="Email Address">
-            <textarea name="Message" placeholder="Message">
-            </textarea>
+            <textarea name="Message" placeholder="Message"></textarea>
 
             <button role="button">Send...</button>
         </form>
@@ -197,14 +196,13 @@
 <!-- /contact section -->
 <!-- ----------------------------------------------------------------------------------------------------- -->
     <footer>
-        <h2 class="socila-icons">Find Us Online</h2>
-        <a href="#">twitter</a>
-       <a href="#">instagram</a>
-       <a href="#">linkedin</a>
-       <a href="#">youtube</a>
-       <a href="#">github</a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+       <a href="#"><i class="fab fa-instagram"></i></a>
+       <a href="#"><i class="fab fa-linkedin-in"></i></a>
+       <a href="#"><i class="fab fa-youtube"></i></a>
+       <a href="#"><i class="fab fa-github"></i></a>
 
-       <p class="copyright">Design by PaPa :-)</p>
+       <p class="copyright">© 2019 PaPa <b class="sign">..</b></p>
 
     </footer>
 </div>

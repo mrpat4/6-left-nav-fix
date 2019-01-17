@@ -1,5 +1,4 @@
 header {
-
     nav {
         background-color :rgba($my_red, .9);
         width: 6em;
@@ -10,6 +9,7 @@ header {
         box-shadow: 0 0 20px 2px #444;
         transform: translateX(-100%);
         transition: transform .5s ease-in-out .1s;
+        z-index: 3;
 
         h2 {
             color : #fff;
@@ -18,6 +18,11 @@ header {
             position: absolute;
             top:3em;
             left: .5em;
+
+            a{
+                text-decoration: none;
+                color: #fff;
+            }
         }
         ul {
             display: grid;
@@ -56,6 +61,7 @@ header {
     transition: transform .5s ease-in-out;
     color: white;
     box-shadow: 0 0 15px 1px rgba(0,0,0,.7);
+    z-index: 3;
 
     p {
         position:relative ;
@@ -65,6 +71,19 @@ header {
         cursor: pointer;
         transform-origin: center left;
         transition:.5s ease-in-out .2s;
+
+        &:active{
+            filter: saturate(150%);
+        }
+   
+        &:hover{
+           text-shadow: 0px 0px 15px rgba(255,255,255,1);
+        }
+        &:focus{
+            outline: none;
+            text-shadow: 0px 0px 15px rgba(255,255,255,1);
+           
+        }
         
     }
 }
